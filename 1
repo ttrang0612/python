@@ -1,0 +1,11 @@
+import pandas as pd
+
+# Tạo DataFrame ban đầu
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}
+df = pd.DataFrame(data)
+
+# Thêm hàng mới bằng DataFrame.loc
+df.loc[len(df)] = ['David', 40]
+
+print("DataFrame sau khi thêm hàng mới:")
+print(df)
